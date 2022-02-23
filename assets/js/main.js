@@ -1,5 +1,9 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-container'));
+const questionCounterText = document.getElementById('questnum')
+const scoreText = document.getElementsByClassName('score');
+
+
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -83,13 +87,16 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 };
-
+/*
+This function is for calling the new question whenever user clicks on any choice 
+*/ 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions)
         // Go to end page
         return window.location.assign("/index.html");
-
+// This will count and show the user,  the number of the question they are on
     questionCounter++;
+    questionCounterText.innerText = questionCounter + "/" + maxQuestions;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
      currentQuestion = availableQuestions[questionIndex];
@@ -100,11 +107,17 @@ getNewQuestion = () => {
         const number = choice.dataset['number'];
         choice.querySelector(".choice-text").innerText = currentQuestion['choice' + number];
     });
-
+// This will stop showing the same questions again
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
 };
+
+/*
+  This will add background color to the choices depends on users answer
+  if correct background will be green 
+  if incorrect backgroud will be red
+ */
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
@@ -116,19 +129,28 @@ choices.forEach(choice => {
         const classToApply =
         selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+        
+
         selectedChoice.classList.add(classToApply);
+
+// This will wait 1 second to apply created classes below
         setTimeout( () => {
             selectedChoice.classList.remove(classToApply);
             getNewQuestion();
+           
         }, 1000);
 
-        
-        
-    })
+        if(classToApply === 'correct') {
+            incrementScore(correctBonus);
+        }
+    });
 
 })
 
-const init = () => {
-    startGame();
-};
-init();
+// This will increment the users score when they answer correct
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+}
+
+startGame();
