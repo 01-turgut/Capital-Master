@@ -1,5 +1,5 @@
-let question = document.getElementById('question');
-let choices = Array.from(document.getElementsByClassName('choice-text'));
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName('choice-container'));
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -8,8 +8,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 // Here I will create my questions array
-let questions = [
-    {
+let questions = [{
         question: 'What\'s the capital of Italy?',
         choice1: 'Rome',
         choice2: 'Paris',
@@ -75,34 +74,52 @@ let questions = [
     }
 ];
 
-let correctBonus = 10;
-let maxQuestions = 3;
+const correctBonus = 10;
+const maxQuestions = 8;
 
-function starGame(){
+startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions]
     getNewQuestion()
 };
 
-function getNewQuestion() {
-    if(availableQuestions === 0 || questionCounter >= maxQuestions)
-    // Go to end page
-    return window.location.assign("/index.html");
+getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= maxQuestions)
+        // Go to end page
+        return window.location.assign("/index.html");
 
     questionCounter++;
 
-    let questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    choices.forEach( choice => {
-        let number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number'];
+        choice.querySelector(".choice-text").innerText = currentQuestion['choice' + number];
     });
 
-    availableQuestions.splice(questionIndex,1);
+    availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
 };
 
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if (!acceptingAnswers) return;
+        acceptingAnswers = false;
+        const selectedChoice = e.currentTarget;
+        const selectedAnswer = Number(selectedChoice.dataset.number);
+
+        getNewQuestion();
+        
+    })
+
+})
+
+const init = () => {
+    startGame();
+};
+init();

@@ -52,6 +52,7 @@ h3 {
     max-width: 100rem;
     max-height: 80rem;
     margin-left: 17vw;
+    border-radius: 3%;
 }
 
 .container > * {
