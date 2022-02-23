@@ -163,6 +163,9 @@ h3 {
     color: red;
 }
 
+#questnum {
+    color: blue;
+}
 .heads-up {
    display: flex;
    position: relative;
