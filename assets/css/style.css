@@ -176,3 +176,13 @@ h3 {
    justify-content: space-between;
    
 }
+
+/* styles for classes created on javascript */
+
+.correct {
+    background-color: green;
+}
+
+.incorrect{
+    background-color: red;
+}
