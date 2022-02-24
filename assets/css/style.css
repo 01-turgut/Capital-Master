@@ -55,6 +55,11 @@ h3 {
     border-radius: 3%;
 }
 
+#home h1 {
+    position: relative;
+    bottom: 20vh;
+}
+
 .container > * {
     width: 100%;
 }
@@ -68,6 +73,10 @@ h3 {
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+ #logo i {
+    color: #f5d21f;
 }
 
 .justify-content{
@@ -121,7 +130,10 @@ h3 {
     margin-top: 5vh;
     
 }
-
+#end {
+    position: relative;
+    bottom: 15vh;
+}
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -183,4 +195,21 @@ h3 {
 
 .incorrect{
     background-color: red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(51, 51, 51, 0.7);
+}
+
+input::placeholder {
+    color: #aaa;
 }

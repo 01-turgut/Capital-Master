@@ -92,8 +92,9 @@ This function is for calling the new question whenever user clicks on any choice
 */ 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions)
+    localStorage.setItem('mostRecentScore', score);
         // Go to end page
-        return window.location.assign("/index.html");
+        return window.location.assign("/end.html");
 // This will count and show the user,  the number of the question they are on
     questionCounter++;
     questionCounterText.innerText = questionCounter + "/" + maxQuestions;
@@ -141,16 +142,18 @@ choices.forEach(choice => {
         }, 1000);
 
         if(classToApply === 'correct') {
-            incrementScore(correctBonus);
+            incrementScore(correctBonus); 
         }
     });
 
 })
 
 // This will increment the users score when they answer correct
-incrementScore = num => {
+function incrementScore(num) {    
     score +=num;
     scoreText.innerText = score;
-}
+    
+};
+
 
 startGame();
