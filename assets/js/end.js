@@ -1,8 +1,8 @@
 const userName = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
-const finalScore = document.getElementById('finalscore')
+const finalScore = document.getElementById('finalscore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
-
+finalScore.innerText = mostRecentScore
 
 userName.addEventListener('keyup', () => {
 
