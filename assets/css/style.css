@@ -197,6 +197,9 @@ h3 {
     background-color: red;
 }
 
+
+/* Styles for end.html*/
+
 form{
     display: flex;
     flex-direction: column;
@@ -213,3 +216,4 @@ input{
 input::placeholder {
     color: #aaa;
 }
+

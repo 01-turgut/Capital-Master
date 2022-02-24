@@ -1,7 +1,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-container'));
 const questionCounterText = document.getElementById('questnum')
-const scoreText = document.getElementsByClassName('score');
+const scoreText = document.getElementById('score');
 
 
 
@@ -87,14 +87,15 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 };
-/*
-This function is for calling the new question whenever user clicks on any choice 
-*/ 
+
+//This function is for calling the new question whenever user clicks on any choice 
+
 getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter >= maxQuestions)
+    if (availableQuestions.length === 0 || questionCounter >= maxQuestions){
     localStorage.setItem('mostRecentScore', score);
         // Go to end page
         return window.location.assign("/end.html");
+    }
 // This will count and show the user,  the number of the question they are on
     questionCounter++;
     questionCounterText.innerText = questionCounter + "/" + maxQuestions;
@@ -129,6 +130,11 @@ choices.forEach(choice => {
 
         const classToApply =
         selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        console.log(classToApply)
+
+        if(classToApply === 'correct') {
+            incrementScore(correctBonus); 
+        }
 
         
 
@@ -139,11 +145,7 @@ choices.forEach(choice => {
             selectedChoice.classList.remove(classToApply);
             getNewQuestion();
            
-        }, 1000);
-
-        if(classToApply === 'correct') {
-            incrementScore(correctBonus); 
-        }
+        }, 1000)
     });
 
 })
