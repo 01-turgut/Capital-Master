@@ -154,8 +154,8 @@ choices.forEach(choice => {
 function incrementScore(num) {    
     score +=num;
     scoreText.innerText = score;
-    
 };
 
 
 startGame();
+

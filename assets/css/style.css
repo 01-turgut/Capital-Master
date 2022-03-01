@@ -142,7 +142,7 @@ h3 {
 
 .choice-container {
     display: flex;
-    margin-bottom: 0.5rem;
+    margin-top: -.8rem;
     width: 100%;
     font-size: 1.8rem;
     border: 00.1rem solid;
@@ -182,8 +182,13 @@ h3 {
 
 #questnum {
     color: blue;
+    font-size: 2vw;
 }
 
+#score {
+    color: red;
+    font-size: 2vw;
+}
 .heads-up {
     display: flex;
     position: relative;
