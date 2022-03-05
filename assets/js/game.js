@@ -112,7 +112,7 @@ startGame = () => {
 //This function is for calling the new question whenever user clicks on any choice 
 
 getNewQuestion = () => {
-    //@CC Hide Image . Show Question
+    // Hide Image . Show Question
     gameContainer.style.display = "block"
     imgContainer.style.display = "none"
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
@@ -128,10 +128,10 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    //@CC added index variable for the answers
+    // added index variable for the answers
     var idx = 0;
     choices.forEach(choice => {
-        console.log(choice)
+        
         const number = choice.dataset['number'];
         //@CC take the question at the index
         choice.querySelector(".choice-text").innerText = currentQuestion.choices[idx];
@@ -149,7 +149,7 @@ getNewQuestion = () => {
   if incorrect backgroud will be red
  */
 showImage = () => {
-    //@CC Hide Question . Show Image
+    // Hide Question . Show Image
     gameContainer.style.display = "none"
     imgContainer.src = currentQuestion.imageURL;
     imgContainer.style.display = "block"
@@ -162,7 +162,7 @@ choices.forEach(choice => {
         const selectedChoice = e.currentTarget;
         const selectedAnswer = Number(selectedChoice.dataset.number);
 
-        //@CC added -1 because of array starts at 0
+        // added -1 because of array starts at 0
         const classToApply =
             selectedAnswer == currentQuestion.answer  ? 'correct' : 'incorrect'
 
@@ -182,7 +182,7 @@ choices.forEach(choice => {
             setTimeout(() => {
                 getNewQuestion();
 
-            }, 2000)
+            }, 1000)
 
         }, 800)
     });
