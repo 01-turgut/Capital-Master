@@ -129,13 +129,13 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     // added index variable for the answers
-    var idx = 0;
+    var AnswerIndex = 0;
     choices.forEach(choice => {
         
         const number = choice.dataset['number'];
-        //@CC take the question at the index
-        choice.querySelector(".choice-text").innerText = currentQuestion.choices[idx];
-        idx++;
+        // take the question at the index
+        choice.querySelector(".choice-text").innerText = currentQuestion.choices[AnswerIndex];
+        AnswerIndex++;
     });
     // This will stop showing the same questions again
     availableQuestions.splice(questionIndex, 1);
