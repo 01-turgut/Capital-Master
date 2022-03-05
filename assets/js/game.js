@@ -131,7 +131,7 @@ getNewQuestion = () => {
     // added index variable for the answers
     var AnswerIndex = 0;
     choices.forEach(choice => {
-        
+
         const number = choice.dataset['number'];
         // take the question at the index
         choice.querySelector(".choice-text").innerText = currentQuestion.choices[AnswerIndex];
@@ -143,11 +143,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-/*
-  This will add background color to the choices depends on users answer
-  if correct background will be green 
-  if incorrect backgroud will be red
- */
+
 showImage = () => {
     // Hide Question . Show Image
     gameContainer.style.display = "none"
@@ -164,8 +160,13 @@ choices.forEach(choice => {
 
         // added -1 because of array starts at 0
         const classToApply =
-            selectedAnswer == currentQuestion.answer  ? 'correct' : 'incorrect'
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+        /*
+  This will add background color to the choices depends on users answer
+  if correct background will be green 
+  if incorrect backgroud will be red
+ */
 
         if (classToApply === 'correct') {
             incrementScore(correctBonus);
@@ -178,7 +179,9 @@ choices.forEach(choice => {
         // This will wait 1 second to apply created classes below
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply)
-            showImage();
+            if (classToApply === 'incorrect') {
+                showImage();
+            }
             setTimeout(() => {
                 getNewQuestion();
 

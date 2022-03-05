@@ -123,9 +123,9 @@ body {
     color: #333;
 }
 
-
-
-
+#imgContainer {
+    margin-left: 5vw;
+}
 
 .choice-container {
     display: flex;
