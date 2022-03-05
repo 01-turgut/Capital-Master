@@ -158,7 +158,7 @@ choices.forEach(choice => {
         const selectedChoice = e.currentTarget;
         const selectedAnswer = Number(selectedChoice.dataset.number);
 
-        // added -1 because of array starts at 0
+        
         const classToApply =
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
