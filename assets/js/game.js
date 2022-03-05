@@ -18,7 +18,7 @@ let questions = [{
         question: 'What\'s the capital of Italy?',
         choices: ['Rome', 'Paris', 'Venice', 'Florence'],
         answer: 1,
-        imageURL: "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        imageURL: "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4166650.jpg"
     },
     {
         question: 'What\'s the capital of Spain?',
@@ -28,7 +28,7 @@ let questions = [{
             'Valancia'
         ],
         answer: 3,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://media.istockphoto.com/photos/madrid-highway-sign-picture-id498057654?k=20&m=498057654&s=170667a&w=0&h=QMOC2GLyitcfhuGTdxMM94xIJjzOfpsxZS_SYZvI1G4="
 
     },
     {
@@ -39,7 +39,7 @@ let questions = [{
             'Dublin'
         ],
         answer: 4,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2013/05/dublin-sign-440x250.jpg"
 
     },
     {
@@ -50,7 +50,7 @@ let questions = [{
             'Chania'
         ],
         answer: 1,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://www.picserver.org/highway-signs2/images/athens.jpg"
 
     },
     {
@@ -61,7 +61,7 @@ let questions = [{
             'Munich'
         ],
         answer: 3,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://cdn.pixabay.com/photo/2015/05/30/20/54/berlin-790677_960_720.png"
 
     },
     {
@@ -72,7 +72,7 @@ let questions = [{
             'Kazan'
         ],
         answer: 1,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://i.pinimg.com/originals/f7/9b/ac/f79bacd0624a85894779bf58ff0e67e0.jpg"
 
     },
     {
@@ -83,7 +83,7 @@ let questions = [{
             'Braga'
         ],
         answer: 3,
-        imageURL: "https://images.pexels.com/photos/4304222/pexels-photo-4304222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        imageURL: "https://img.freepik.com/free-vector/lisbon-neon-sign_73458-1017.jpg"
 
     },
     {
@@ -94,7 +94,7 @@ let questions = [{
             'Kiruna'
         ],
         answer: 1,
-        imageURL: "https://www.austrianblog.com/media/images/moskau-reisefuehrer_qm5oxfp.width-1600.jpg"
+        imageURL: "https://ak.picdn.net/shutterstock/videos/9763607/thumb/11.jpg"
 
     }
 ];
@@ -162,7 +162,7 @@ choices.forEach(choice => {
         const selectedChoice = e.currentTarget;
         const selectedAnswer = Number(selectedChoice.dataset.number);
 
-        //@CC added -1 becuas of arra starts at 0
+        //@CC added -1 because of array starts at 0
         const classToApply =
             selectedAnswer == currentQuestion.answer  ? 'correct' : 'incorrect'
 

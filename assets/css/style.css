@@ -53,10 +53,11 @@ body {
 
 }
 
-#home h1 {}
+
 
 .container>* {
     width: 100%;
+    background-color: lightblue;
 }
 
 .flex-column {
@@ -164,11 +165,10 @@ body {
     color: green;
 }
 
-
-
-
-
-
+.home {
+    font-size: 150%;
+    
+}
 
 .heads-up {
     display: flex;
@@ -218,7 +218,7 @@ input::placeholder {
 #highScoresList {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 2rem;
+    margin-top: 7vw;
 }
 
 .high-score {
