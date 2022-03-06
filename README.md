@@ -78,3 +78,10 @@ During the strategy stage, planned features were mapped according to their impor
 | 3. Question heads up display | 1 | 
 | 4. Contents on selected wrong and correct answer | 2 |
 | 5. Sound effects | 2 |
+
+### Existing Features
+
+- Responsive design
+  * This website is using bootstrap and css for responsiveness on any device
+- Home Page
+  * 
