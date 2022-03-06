@@ -179,15 +179,15 @@ choices.forEach(choice => {
         // This will wait 1 second to apply created classes below
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply)
-            if (classToApply === 'incorrect') {
+             if (classToApply === 'incorrect') {
                 showImage();
             }
             setTimeout(() => {
                 getNewQuestion();
 
-            }, 1000)
+            }, 500)
 
-        }, 800)
+        },1000)
     });
 
 })

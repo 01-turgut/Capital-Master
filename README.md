@@ -83,5 +83,35 @@ During the strategy stage, planned features were mapped according to their impor
 
 - Responsive design
   * This website is using bootstrap and css for responsiveness on any device
-- Home Page
-  * 
+- Landing Page
+  * The Landing page introduces the Capital Master quiz, to give an idea to the use what the site is about there is a short information text
+- Quiz 
+  * When the user click play icon or play button on landing page that will take the user to the game, if user starts to answer, if theey choose right choice it will highligh green if it's incorrect it will highlight red
+- Score Tracker
+  * The score will increase by 10 will increase each time when user is answered correctly
+- Showing Correct Choice
+  * When user answered incorrectly choosen answer will highlight red and a single photo will appear show the correct city
+- Play Again button
+  * At the end of the game there is a button to play again
+- Save Score
+  * At the end of the game there is a input for user to type their name to save their score to view it later.
+- Save button
+  * At the end of the game when user typed their name and click to the save button this button will take them to the landing page and save their score
+- High Score
+  * When users is back on landing page there is a high scores button, so user can click to this button and this button will take user to the high scores page
+
+## Structure Plane
+
+This game is 4 page, user can navigate on this pages using the given buttons, structure of the game is simple and clear.
+
+## Skeleton Plane
+
+### Wireframes
+
+| Mobile | Tablet| Desktop|
+--------------------|--------------------|--------------------------|
+| [Mobile Home Page](/assets/readme-images/wireframes/Mobile%20-%20Home.png) | [Tablet Home Page](/assets/readme-images/wireframes/Tablet-Home.png) | [Desktop Home Page](/assets/readme-images/wireframes/Home.png) |
+| [Mobile Game Page](/assets/readme-images/wireframes/Game%20Page%20-%20Mobile.png) | [Tablet Game Page](/assets/readme-images/wireframes/Game%20Page%20-%20Tablet.png) | [Desktop Game Page](/assets/readme-images/wireframes/Game%20Page.png) |
+| [Mobile High Scores Page](/assets/readme-images/wireframes/High%20Scores%20-%20Mobile.png) | [Tablet High Scores Page](/assets/readme-images/wireframes/High%20Scores%20-%20Tablet.png) | [Desktop High Scores Page](/assets/readme-images/wireframes/High%20Scores.png) |
+| [Mobile End Page](/assets/readme-images/wireframes/End%20Page%20mobile.png) | [Tablet End Page](/assets/readme-images/wireframes/End%20Page%20Tablet%20.png) | [Desktop End Page](/assets/readme-images/wireframes/End%20page.png) |
+
