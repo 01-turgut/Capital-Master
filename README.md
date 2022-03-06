@@ -16,10 +16,10 @@ Deployed [site]()
 5. [Structure Plane](#structure-plane)
 6. [Skeleton Plane](#skeleton-plane)
 7. [Surface Plane](#surface-plane)
-8. [Tecnologies]()
-9. [Testing]()
-10. [Deployment]()
-11. [Credits]()
+8. [Tecnologies](#tecnologies)
+9. [Testing](#testing)
+10. [Deployment](#deployment)
+11. [Credits](#acknowledegments)
 
 ---
 
