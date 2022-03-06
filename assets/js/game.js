@@ -112,7 +112,7 @@ startGame = () => {
 //This function is for calling the new question whenever user clicks on any choice 
 
 getNewQuestion = () => {
-    // Hide Image . Show Question
+    // Hide Image - Show Question
     gameContainer.style.display = "block"
     imgContainer.style.display = "none"
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
