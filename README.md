@@ -111,7 +111,7 @@ This game is 4 page, user can navigate on this pages using the given buttons, st
 --------------------|--------------------|--------------------------|
 | [Mobile Home Page](/assets/images/readme-images/wireframes/Mobile%20-%20Home.png) | [Tablet Home Page](/assets/images/readme-images/wireframes/Tablet-Home.png) | [Desktop Home Page](/assets/images/readme-images/wireframes/Home.png) |
 | [Mobile Game Page](/assets/images/readme-images/wireframes/Game%20Page%20-%20Mobile.png) | [Tablet Game Page](/assets/images/readme-images/wireframes/Game%20Page%20-%20Tablet.png) | [Desktop Game Page](/assets/images/readme-images/wireframes/Game%20Page.png) |
-| [Mobile High Scores Page](/assets//images/readme-images/wireframes/High%20Scores%20-%20Mobile.png) | [Tablet High Scores Page](/assets/images/readme-images/wireframes/High%20Scores%20-%20Tablet.png) | [Desktop High Scores Page](/assets/images/readme-images/wireframes/High%20Scores.png) |
+| [Mobile High Scores Page](/assets/images/readme-images/wireframes/High%20Scores%20-%20Mobile.png) | [Tablet High Scores Page](/assets/images/readme-images/wireframes/High%20Scores%20-%20Tablet.png) | [Desktop High Scores Page](/assets/images/readme-images/wireframes/High%20Scores.png) |
 | [Mobile End Page](/assets/images/readme-images/wireframes/End%20Page%20mobile.png) | [Tablet End Page](/assets/images/readme-images/wireframes/End%20Page%20Tablet%20.png) | [Desktop End Page](/assets/images/readme-images/wireframes/End%20page.png) |
 
 ## Surface Plane 
