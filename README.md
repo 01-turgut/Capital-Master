@@ -1,5 +1,5 @@
 # QUIZ MASTER
-![Mock-up of site](assets/readme-images/mockup.png)
+![Mock-up of site](/assets/images/readme-images/mockup.png)
 
 Quiz Master is an interactive quiz aimed at 8-16 year old children, with the aim of teaching the capitals of the countries to it's curious players.
 
@@ -109,10 +109,10 @@ This game is 4 page, user can navigate on this pages using the given buttons, st
 
 | Mobile | Tablet| Desktop|
 --------------------|--------------------|--------------------------|
-| [Mobile Home Page](/assets/readme-images/wireframes/Mobile%20-%20Home.png) | [Tablet Home Page](/assets/readme-images/wireframes/Tablet-Home.png) | [Desktop Home Page](/assets/readme-images/wireframes/Home.png) |
-| [Mobile Game Page](/assets/readme-images/wireframes/Game%20Page%20-%20Mobile.png) | [Tablet Game Page](/assets/readme-images/wireframes/Game%20Page%20-%20Tablet.png) | [Desktop Game Page](/assets/readme-images/wireframes/Game%20Page.png) |
-| [Mobile High Scores Page](/assets/readme-images/wireframes/High%20Scores%20-%20Mobile.png) | [Tablet High Scores Page](/assets/readme-images/wireframes/High%20Scores%20-%20Tablet.png) | [Desktop High Scores Page](/assets/readme-images/wireframes/High%20Scores.png) |
-| [Mobile End Page](/assets/readme-images/wireframes/End%20Page%20mobile.png) | [Tablet End Page](/assets/readme-images/wireframes/End%20Page%20Tablet%20.png) | [Desktop End Page](/assets/readme-images/wireframes/End%20page.png) |
+| [Mobile Home Page](/assets/images/readme-images/wireframes/Mobile%20-%20Home.png) | [Tablet Home Page](/assets/images/readme-images/wireframes/Tablet-Home.png) | [Desktop Home Page](/assets/images/readme-images/wireframes/Home.png) |
+| [Mobile Game Page](/assets/images/readme-images/wireframes/Game%20Page%20-%20Mobile.png) | [Tablet Game Page](/assets/images/readme-images/wireframes/Game%20Page%20-%20Tablet.png) | [Desktop Game Page](/assets/images/readme-images/wireframes/Game%20Page.png) |
+| [Mobile High Scores Page](/assets//images/readme-images/wireframes/High%20Scores%20-%20Mobile.png) | [Tablet High Scores Page](/assets/images/readme-images/wireframes/High%20Scores%20-%20Tablet.png) | [Desktop High Scores Page](/assets/images/readme-images/wireframes/High%20Scores.png) |
+| [Mobile End Page](/assets/images/readme-images/wireframes/End%20Page%20mobile.png) | [Tablet End Page](/assets/images/readme-images/wireframes/End%20Page%20Tablet%20.png) | [Desktop End Page](/assets/images/readme-images/wireframes/End%20page.png) |
 
 ## Surface Plane 
 

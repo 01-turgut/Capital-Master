@@ -13,7 +13,7 @@ userName.addEventListener('keyup', () => {
 });
 
 // this function is for saving all the scores, and push into an array
-saveHighScore = e => {
+const saveHighScore = e => {
     
     e.preventDefault();
 
@@ -26,5 +26,5 @@ saveHighScore = e => {
     highScores.splice(5);
     
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/')
-}
+    window.location.assign('/');
+};

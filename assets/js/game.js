@@ -1,6 +1,6 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-container'));
-const questionCounterText = document.getElementById('questnum')
+const questionCounterText = document.getElementById('questnum');
 const scoreText = document.getElementById('score');
 const imgContainer = document.getElementById('imgContainer');
 const gameContainer = document.getElementById('choices-container');
@@ -102,19 +102,19 @@ let questions = [{
 const correctBonus = 10;
 const maxQuestions = 8;
 
-startGame = () => {
+const startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions]
-    getNewQuestion()
+    availableQuestions = [...questions];
+    getNewQuestion();
 };
 
 //This function is for calling the new question whenever user clicks on any choice 
 
-getNewQuestion = () => {
+const getNewQuestion = () => {
     // Hide Image - Show Question
-    gameContainer.style.display = "block"
-    imgContainer.style.display = "none"
+    gameContainer.style.display = "block";
+    imgContainer.style.display = "none";
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem('mostRecentScore', score);
         // Go to end page
@@ -132,7 +132,7 @@ getNewQuestion = () => {
     var AnswerIndex = 0;
     choices.forEach(choice => {
 
-        const number = choice.dataset['number'];
+        const number = choice.dataset['...number'];
         // take the question at the index
         choice.querySelector(".choice-text").innerText = currentQuestion.choices[AnswerIndex];
         AnswerIndex++;
@@ -144,12 +144,12 @@ getNewQuestion = () => {
 };
 
 
-showImage = () => {
+const showImage = () => {
     // Hide Question . Show Image
-    gameContainer.style.display = "none"
+    gameContainer.style.display = "none";
     imgContainer.src = currentQuestion.imageURL;
-    imgContainer.style.display = "block"
-}
+    imgContainer.style.display = "block";
+};
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
@@ -160,7 +160,7 @@ choices.forEach(choice => {
 
         
         const classToApply =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         /*
   This will add background color to the choices depends on users answer
@@ -178,25 +178,25 @@ choices.forEach(choice => {
 
         // This will wait 1 second to apply created classes below
         setTimeout(() => {
-            selectedChoice.classList.remove(classToApply)
+            selectedChoice.classList.remove(classToApply);
              if (classToApply === 'incorrect') {
                 showImage();
             }
             setTimeout(() => {
                 getNewQuestion();
 
-            }, 500)
+            }, 1000);
 
-        },1000)
+        },1000);
     });
 
-})
+});
 
 // This will increment the users score when they answer correct
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
-};
+}
 
 
 startGame();
