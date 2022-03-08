@@ -1,4 +1,4 @@
-# QUIZ MASTER
+# CAPITAL MASTER
 ![Mock-up of site](/assets/images/readme-images/mockup.png)
 
 Quiz Master is an interactive quiz aimed at 8-16 year old children, with the aim of teaching the capitals of the countries to it's curious players.
